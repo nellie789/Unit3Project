@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="content">
+        <div class="row">
+            <div>
+                <label for="first">Number</label>
+                <input type="text" id="first" name="first" style="width: 75px; height: 35px;">
+            </div>
+            <div>
+                <select name="container" id="container" style="width: 55px; height: 35px;">
+                    <option value="add">+</option>
+                    <option value="subtract">-</option>
+                    <option value="multiply">x</option>
+                    <option value="divide">/</option>
+                    <option value="mod">%</option>
+                </select>
+            </div>
+            <div>
+                <label for="second">Number</label>
+                <input type="text" id="second" name="second" style="width: 75px; height: 35px;">
+            </div>
+            <button name="equal" style="width: 45px; height: 35px;">=</button>
+        </div>
+        <p></p>
+    </div>
+</div>
+<script>
+    const firstNumber = document.getElementById('first');
+    const secondNumber = document.getElementById('second');
+    const equal = document.querySelector('equal');
+    const add = document.querySelector('add');
+    const subtract = document.querySelector('subtract');
+    const multiply = document.querySelector('multiply');
+    const divide = document.querySelector('divide');
+    const mod = document.querySelector('mod');
+
+    add.addEventListener('click', function(e){
+
+    })
+
+    function add(){
+        console.log(`${firstNumber} + ${secondNumber} = ${firstNumber+secondNumber}`);
+    }
+
+    function subtract(){
+        console.log(`${firstNumber} - ${secondNumber} = ${firstNumber-secondNumber}`);
+    }
+
+    function multiply(){
+        console.log(`${firstNumber} x ${secondNumber} = ${firstNumber*secondNumber}`);
+    }
+
+    function divide(){
+        console.log(`${firstNumber} / ${secondNumber} = ${firstNumber/secondNumber}`);
+    }
+
+    function mod(){
+        console.log(`${firstNumber} + ${secondNumber} = ${firstNumber+secondNumber}`);
+    }
+
+</script>
+</body>
+</html>
